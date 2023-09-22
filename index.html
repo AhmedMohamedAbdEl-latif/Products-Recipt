@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product's Recipt</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <section class="form">
+        <div class="container">
+            <h1>Add New Product</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <input id="title"  class="form-control" type="text" placeholder="Product Title">
+                        <span class="invalid_message">Enter The Product Title , Ya A5oya</span>
+                    </div>
+                    <div class="row" id="allCost">
+                        <div class="item">
+                            <div class="form-group">
+                                <input class="form-control inputNumbers" type="number" placeholder="Price">
+                                <span class="invalid_message">Enter The Price , Ya A5oya</span>
+                                <br>
+                                <span class="invalid_number">Enter Valid Number</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input class="form-control inputNumbers" type="number" placeholder="Tax %">
+                                <span class="invalid_message">Enter The Tax , Ya Ghaly</span>
+                                <br>
+                                <span class="invalid_number">Enter Valid Number</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input class="form-control inputNumbers" type="number" placeholder="Discount">
+                                <span class="invalid_message">Enter The Discount, Ya Ghaly</span>
+                                <br>
+                                <span class="invalid_number">Enter Valid Number</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input class="form-control inputNumbers" readonly type="number" placeholder="Total">
+                                <span class="invalid_message"></span>
+                                <span class="invalid_number"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input id="count" class="form-control inputNumbers" type="number" placeholder="Count of Added">        
+                        <span class="invalid_message">Enter The Count of Added .. At Least 1 , Ma3alsh</span>
+                        <br>
+                        <span class="invalid_number">Enter Valid Number</span>
+                    </div>
+                    <div class="form-group">
+                        <input id="department" class="form-control" type="text" placeholder="Deprtment">
+                        <span class="invalid_message">The last One Wallahy , Enter The Product Department</span>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" id="createBtn">Add This Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="data">
+        <div class="container">
+            <h2>List of all Products</h2>
+            <div class="card">
+                <button class="btn" id="clearBtn">Clear<span id="countBtn"></span></button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th max-width="8%">ID</th>
+                            <th width="32%">Title</th>
+                            <th width="5%">Price</th>
+                            <th width="5%">Tax</th>
+                            <th width="5%">Discount</th>
+                            <th width="5%">Total</th>
+                            <th width="20%">Department</th>
+                            <th width="20%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
